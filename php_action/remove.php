@@ -28,8 +28,10 @@ if($_POST) {
 		echo "</style>";
 		echo "</head>";
 		echo "<body>";
-		echo "<p>Deletado com sucesso!</p>";
-		echo "<a href='../index.php'><button type='button'>Voltar</button></a>";
+		echo "<div class='container'>";
+		echo "<h2>Deletado com sucesso!</h2>";
+		echo "<a href='../index.php'><button type='button' class='btn btn-default'>Voltar</button></a>";
+		echo "</div>";
 		echo "</body>";
 		echo "</html>";
 	} else {
@@ -54,7 +56,10 @@ if($_POST) {
 		echo "</style>";
 		echo "</head>";
 		echo "<body>";
+		echo "<div class='container'>";
+		echo "<h2>Deletado com sucesso!</h2>";
 		echo "Erro ao deletar registro : " . $connect->error;
+		echo "</div>";
 		echo "</body>";
 		echo "</html>";
 	}

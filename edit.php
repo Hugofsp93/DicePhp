@@ -23,7 +23,7 @@ if($_GET['id']) {
 	<body>
 		<div class="container">
 			<h2>Editar</h2>
-			<form action="php_action/create.php" method="post">
+			<form action="php_action/update.php" method="post">
 				<div class="form-group">
 					<label for="text">Nome:</label>
 					<input type="text" class="form-control" name="nome" placeholder="Qual nome do projeto?" value="<?php echo $data['Nome'] ?>">
@@ -48,6 +48,7 @@ if($_GET['id']) {
 					<label for="number">Esforço:</label>
 					<input type="number" class="form-control" name="esforco" placeholder="Qual o esforço do projeto?" value="<?php echo $data['Esforco'] ?>">
 				</div>
+				<input type="hidden" name="id" value="<?php echo $data['Id']?>" />
 				<button type="submit" class="btn btn-default">Salvar</button></td>
 				<a href="index.php"><button type="button" class="btn btn-default">Voltar</button></a>
 			</form>

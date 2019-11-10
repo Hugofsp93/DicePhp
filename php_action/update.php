@@ -36,11 +36,12 @@ if($_POST) {
 		echo "</style>";
 		echo "</head>";
 		echo "<body>";
-		echo "<a href='../edit.php?id=".$id."'><button type='button'>Voltar</button></a>";
-		echo "<a href='../index.php'><button type='button'>Início</button></a>";
+		echo "<div class='container'>";
+		echo "<h2>Atualizado com sucesso!</h2>";
+		echo "<a href='../index.php'><button type='button' class='btn btn-default'>Início</button></a>";
+		echo "</div>";
 		echo "</body>";
 		echo "</html>";
-		echo "<p>Atualizado com sucesso</p>";
 	} else {
 		echo "<!DOCTYPE html>";
 		echo "<html>";
@@ -63,7 +64,9 @@ if($_POST) {
 		echo "</style>";
 		echo "</head>";
 		echo "<body>";
+		echo "<div class='container'>";
 		echo "Erro ao atualizar registro : ". $connect->error;
+		echo "</div>";
 		echo "</body>";
 		echo "</html>";
 	}
