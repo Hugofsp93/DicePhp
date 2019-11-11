@@ -32,7 +32,7 @@
 				</thead>
 				<tbody>
 					<?php
-					$sql = "SELECT * FROM Dice";
+					$sql = "SELECT * FROM Dice ORDER BY Score";
 					$result = $connect->query($sql);
 
 					if($result->num_rows > 0) {
