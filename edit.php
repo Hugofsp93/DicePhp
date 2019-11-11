@@ -22,7 +22,11 @@ if($_GET['id']) {
 	</head>
 	<body>
 		<div class="container">
-			<h2>Editar</h2>
+			<br>
+			<div class="alert alert-info">
+				<strong>Aviso:</strong> Para seguir os valores padrões do DICE, os valores devem variar de 1 a 4.
+			</div>
+			<h2>Editar Projeto</h2>
 			<form action="php_action/update.php" method="post">
 				<div class="form-group">
 					<label for="text">Nome:</label>

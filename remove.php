@@ -14,7 +14,7 @@ if($_GET['id']) {
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Remover Dice</title>
+		<title>Excluir Projeto</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -23,7 +23,11 @@ if($_GET['id']) {
 	</head>
 	<body>
 		<div class="container">
-			<h2>Tem certeza que deseja remover?</h2>
+			<br>
+			<div class="alert alert-danger">
+				<strong>Atenção:</strong> Após confirmar a exclusão, o projeto não poderá mais ser recuperado.
+			</div>
+			<h2>Tem certeza que deseja excluir?</h2>
 			<form action="php_action/remove.php" method="post">
 				<input type="hidden" name="id" value="<?php echo $data['Id'] ?>" />
 				<button type="submit" class="btn btn-default">Salvar</button>

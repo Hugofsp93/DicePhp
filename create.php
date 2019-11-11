@@ -10,7 +10,11 @@
 	</head>
 	<body>
 		<div class="container">
-			<h2>Cadastrar</h2>
+			<br>
+			<div class="alert alert-info">
+				<strong>Aviso:</strong> Para seguir os valores padrões do DICE, os valores devem variar de 1 a 4.
+			</div>
+			<h2>Cadastro do Projeto</h2>
 			<form action="php_action/create.php" method="post">
 				<div class="form-group">
 					<label for="text">Nome:</label>
