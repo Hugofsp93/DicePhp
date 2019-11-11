@@ -27,7 +27,7 @@ if($_GET['id']) {
 			<div class="alert alert-danger">
 				<strong>Atenção:</strong> Após confirmar a exclusão, o projeto não poderá mais ser recuperado.
 			</div>
-			<h2>Tem certeza que deseja excluir?</h2>
+			<h3>Tem certeza que deseja excluir?</h3>
 			<form action="php_action/remove.php" method="post">
 				<input type="hidden" name="id" value="<?php echo $data['Id'] ?>" />
 				<button type="submit" class="btn btn-default">Salvar</button>

@@ -20,14 +20,14 @@
 			<table class="table table-bordered table-striped">
 				<thead>
 					<tr style="background-color: rgba(0,0,0,.115);">
-						<th>Nome</th>
-						<th>Duração</th>
-						<th>Integridade</th>
-						<th>Comprometimento da Gerência</th>
-						<th>Comprometimento dos Funcionários</th>
-						<th>Esforço</th>
-						<th>Pontuação</th>
-						<th></th>
+						<th style="width: 12%;">Nome</th>
+						<th style="width: 12%;">Duração</th>
+						<th style="width: 12%;">Integridade</th>
+						<th style="width: 12%;">Comprometimento da Gerência</th>
+						<th style="width: 12%;">Comprometimento dos Funcionários</th>
+						<th style="width: 12%;">Esforço</th>
+						<th style="width: 12%;">Pontuação</th>
+						<th style="width: 16%;"></th>
 					</tr>
 				</thead>
 				<tbody>

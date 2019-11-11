@@ -65,7 +65,9 @@ if($_POST) {
 		echo "</head>";
 		echo "<body>";
 		echo "<div class='container'>";
-		echo "Erro ao atualizar registro : ". $connect->error;
+		echo "<br>";
+		echo "<h4>Retorne e verifique se algum dos campos não foi preenchido!</h4>";
+		echo "<a href='../edit.php?id=".$id."'><button type='button' class='btn btn-default'>Voltar</button></a>";
 		echo "</div>";
 		echo "</body>";
 		echo "</html>";

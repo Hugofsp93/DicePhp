@@ -64,7 +64,10 @@ if($_POST) {
 		echo "</head>";
 		echo "<body>";
 		echo "<div class='container'>";
-		echo "Erro " . $sql . ' ' . $connect->connect_error;
+		echo "<br>";
+		echo "<h4>Retorne e verifique se algum dos campos não foi preenchido!</h4>";
+		echo "<a href='../create.php'><button type='button' class='btn btn-default'>Voltar</button></a>";
+		// echo "Erro " . $sql . ' ' . $connect->connect_error;
 		echo "</div>";
 		echo "</body>";
 		echo "</html>";

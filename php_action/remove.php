@@ -29,7 +29,8 @@ if($_POST) {
 		echo "</head>";
 		echo "<body>";
 		echo "<div class='container'>";
-		echo "<h2>Deletado com sucesso!</h2>";
+		echo "<br>";
+		echo "<h3>Deletado com sucesso!</h3>";
 		echo "<a href='../index.php'><button type='button' class='btn btn-default'>Voltar</button></a>";
 		echo "</div>";
 		echo "</body>";
@@ -57,7 +58,8 @@ if($_POST) {
 		echo "</head>";
 		echo "<body>";
 		echo "<div class='container'>";
-		echo "<h2>Deletado com sucesso!</h2>";
+		echo "<br>";
+		echo "<h3>Deletado com sucesso!</h3>";
 		echo "Erro ao deletar registro : " . $connect->error;
 		echo "</div>";
 		echo "</body>";
