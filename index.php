@@ -233,3 +233,96 @@
 </div>
 </div>
 </html>
+<script>
+	function formatCells(table){
+    var tbody = table.getElementsByTagName('tbody')[0],
+			cells = tbody.getElementsByTagName('td'),
+			colors = ['#fc8581', '#f5ec73', '#97f27e'];
+    for (var c = 0, len = cells.length; c <= len; c++){
+			if (cells[c].cellIndex > 0){
+				switch (parseInt((cells[c].textContent || cells[c].innerText), 10)){
+					case 4:
+						cells[c].style.backgroundColor = colors[0];
+						break;
+					case 7:
+						cells[c].style.backgroundColor = colors[2];
+						break;
+					case 8:
+						cells[c].style.backgroundColor = colors[2];
+						break;
+					case 9:
+						cells[c].style.backgroundColor = colors[2];
+						break;
+					case 10:
+						cells[c].style.backgroundColor = colors[2];
+						break;
+					case 11:
+						cells[c].style.backgroundColor = colors[2];
+						break;
+					case 12:
+						cells[c].style.backgroundColor = colors[2];
+						break;
+					case 13:
+						cells[c].style.backgroundColor = colors[2];
+						break;
+					case 14:
+						cells[c].style.backgroundColor = colors[1];
+						break;
+					case 15:
+						cells[c].style.backgroundColor = colors[1];
+						break;
+					case 16:
+						cells[c].style.backgroundColor = colors[1];
+						break;
+					case 17:
+						cells[c].style.backgroundColor = colors[1];
+						break;
+					case 18:
+						cells[c].style.backgroundColor = colors[0];
+						break;
+					case 19:
+						cells[c].style.backgroundColor = colors[0];
+						break;
+					case 20:
+						cells[c].style.backgroundColor = colors[0];
+						break;
+					case 21:
+						cells[c].style.backgroundColor = colors[0];
+						break;
+					case 22:
+						cells[c].style.backgroundColor = colors[0];
+						break;
+					case 23:
+						cells[c].style.backgroundColor = colors[0];
+						break;
+					case 24:
+						cells[c].style.backgroundColor = colors[0];
+						break;
+					case 25:
+						cells[c].style.backgroundColor = colors[0];
+						break;
+					case 26:
+						cells[c].style.backgroundColor = colors[0];
+						break;
+					case 27:
+						cells[c].style.backgroundColor = colors[0];
+						break;
+					case 28:
+						cells[c].style.backgroundColor = colors[0];
+						break;
+				}
+			}
+    }
+	}
+	formatCells(document.getElementsByTagName('table')[0]);
+
+// case 2:
+	// cells[c].style.backgroundColor = colors[1];
+	// break;
+// case 3:
+	// cells[c].style.backgroundColor = colors[1];
+	// break;
+// case 4:
+	// cells[c].style.backgroundColor = colors[2];
+	// break;
+</script>
